@@ -1,0 +1,17 @@
+{
+    "name": "orian/composer-guzzle",
+    "autoload": {
+        "psr-4": {
+            "Orian\\ComposerGuzzle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "orinaya",
+            "email": "orianefrn@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}

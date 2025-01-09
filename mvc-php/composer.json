@@ -1,0 +1,17 @@
+{
+  "name": "orian/mvc-php",
+  "autoload": {
+    "psr-4": {
+      "Ori\\MVC\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "orinaya",
+      "email": "orianefrn@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "^7.2"
+  }
+}
