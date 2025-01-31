@@ -1,0 +1,17 @@
+{
+    "name": "orian/twig",
+    "autoload": {
+        "psr-4": {
+            "Orian\\Twig\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "orinaya",
+            "email": "orianefrn@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}

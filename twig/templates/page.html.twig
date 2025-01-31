@@ -1,0 +1,18 @@
+{# page.php#}
+{% extends 'index.html.twig' %}
+
+    {# <header>
+        {% include('parts/navbar.html.twig') %}
+    </header> #}
+
+{% block style %}
+{% endblock %}
+
+{% block main %}
+    {{parent()}}
+            <h1>Hello Prout !</h1>
+{% endblock %}
+
+{% block footer %}
+    {% include('parts/footer.html.twig') %}
+{% endblock %}

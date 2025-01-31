@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="assets/css/style.css">
+    {% endblock %}
+</head>
+<body>
+
+    <header>
+        {% include('parts/navbar.html.twig') %}
+
+        {# {{}} équivalent à echo htmlentities #}
+    </header>
+    {# {% block main %} est une balise qui permet de définir une section de contenu qui peut être remplacée dans les fichiers qui étendent ce template #}
+    {% block main %}
+        <h1>{{message}}</h1>
+        
+        {# <h2>Profil</h2>
+            <div>
+                <p>{{user.fullName|split(' ')| map(part => part|capitalize)|join(' ')}}</p>
+            </div>
+        <h2>Nombres</h2>
+        <ul>
+            {% for number in numbers | filter (number => number % 2 == 0) %}
+                    <li>{{number}}</li>
+            {% endfor %}
+        </ul> #}
+    {% endblock %}
+</body>
+</html>
